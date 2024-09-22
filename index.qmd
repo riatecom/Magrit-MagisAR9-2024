@@ -1,0 +1,61 @@
+---
+title: "Magrit 🌍<br>Cartographie thématique<br>&nbsp;"
+author:
+  name: "Matthieu Viry (CNRS - UAR RIATE)"
+  email: "matthieu.viry@cnrs.fr"
+subtitle: "24 Septembre 2024 - Webinaire MAGIS AR9"
+format:
+  revealjs:
+    theme: solarized
+    embed-resources: false
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    logo: images/logos-footer.png
+    width: 1150
+    height: 740
+#title-slide-attributes:
+#  data-background-image: images/logos-footer.png
+#  data-background-size: 42%
+#  data-background-position: 50% 90%
+execute:
+  cache: true
+css: ['static/style.css']
+prefer-html: true
+lang: fr
+---
+
+# Plan de la présentation 📝
+
+<br />
+
+1. Magrit nouvelle version
+2. Démonstration
+3. Perspectives d'évolutions
+
+---
+
+## Introduction
+
+Foo
+
+---
+
+## 1. Magrit nouvelle version
+
+Bar
+
+---
+
+## 2. Démonstration
+
+Baz
+
+---
+
+## 3. Perspectives d'évolution
+
+Bla
+---
+
+# Conclusion
