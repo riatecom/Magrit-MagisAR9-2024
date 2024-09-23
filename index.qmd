@@ -1,5 +1,5 @@
 ---
-title: "Magrit 🌍<br>Cartographie thématique<br>&nbsp;"
+title: "Magrit 🌏<br>Cartographie thématique<br>&nbsp;"
 author:
   name: "Matthieu Viry (CNRS - UAR RIATE)"
   email: "matthieu.viry@cnrs.fr"
@@ -11,13 +11,13 @@ format:
     slide-number: true
     show-slide-number: all
     chalkboard: true
-    logo: images/logos-footer.png
+    logo: images/logos-footer-with-magrit.png
     width: 1150
     height: 740
 #title-slide-attributes:
-#  data-background-image: images/logos-footer.png
-#  data-background-size: 42%
-#  data-background-position: 50% 90%
+#  data-background-image: images/cartouche_baseline_black@4x.png
+#  data-background-size: 50%
+#  data-background-position: 50% 20%
 execute:
   cache: true
 css: ['static/style.css']
@@ -33,29 +33,332 @@ lang: fr
 2. Démonstration
 3. Perspectives d'évolutions
 
+# 1. Magrit... "nouvelle version" ?
+
+
+## La genèse du projet Magrit
+
+<br />
+
+::::{.medium}
+
+:::{.fragment}
+- **Contexte** :
+  - l'enseignement de la cartographie thématique à l'université
+  - la réalisation de cartes thématiques par un public non-expert (débutants, chercheurs dans d'autres disciplines que la géographie, etc.)
+:::
+
+:::{.fragment}
+- Quels outils pour produire des cartes thématiques ? Quels outils pour enseigner la cartographie thématique ?
+:::
+
+:::{.fragment}
+- *PhilCarto*, *QGIS*, *InkScape* / *Adobe Illustrator* ?
+:::
+
+<br />
+
+:::{.fragment}
+➔ En 2016, pas d'outils **simple**, **complet** et **multiplateforme**
+:::
+
+::::
+
 ---
 
-## Introduction
+## La genèse du projet Magrit
 
-Foo
+<br />
+<br />
 
----
+:::{.medium}
 
-## 1. Magrit nouvelle version
 
-Bar
+- **Objectif : développer un outil de cartographie thématique simple d'utilisation, complet et utilisable sur tous les systèmes d'exploitation**
 
----
+<br />
 
-## 2. Démonstration
+- Conçu et développé à l'UAR RIATE 
 
-Baz
+<br />
 
----
+- Projet financé par l'UAR RIATE sur fonds propres, initié en 2016 et **rendu public en 2017**
 
-## 3. Perspectives d'évolution
+:::
 
-Bla
----
 
-# Conclusion
+## Magrit v1
+
+- 02/2017 - 07/2024 : **7+ ans de bons et loyaux services** 😅
+
+:::{.center}
+![](images/magrit-v1-screenshot.png){.w900}
+:::
+
+## Magrit v2
+
+- **Juillet 2024** : publication de la **version 2** de Magrit 🪩
+
+<br />
+
+- Toujours les mêmes fonctionnalités classiques : 
+  - **Chargement de données** (GeoJSON, Shapefile, KML, GeoPackage, CSV, Excel, OpenOffice, etc.)
+  - **Représentation cartographique** (choroplèthe, symboles proportionnels, discontinuités, etc.)
+  - **Personnalisation des cartes** (légende, titre, échelle, etc.)
+  - **Export des cartes** (PNG, SVG) et **des données** (idem formats d'import)
+  - **Sauvegarde des projets**
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/choro.png)
+
+Choroplèthe
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/choro-histogram.png)
+
+Choroplèthe
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/categorical-choro.png)
+
+Catégories
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/categorical-choro-bar-chart.png)
+
+Catégories
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/example-discontinuity.png)
+
+Discontinuités
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/prop-symbols-0.png)
+
+Symboles proportionnels
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/prop-symbols-choro.png)
+
+Symboles proportionnels
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/prop-symbols-typo.png)
+
+Symboles proportionnels
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/cartograms.png)
+
+Cartogrammes
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/grid-0.png)
+
+Carroyages
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/smoothed-stewart-pop.png)
+
+Lissage (Potentiel de Stewart, KDE)
+
+## *Fonctionnalités de représentation cartographique*
+
+![](images/type/link-map.png)
+
+Liens / Flux 
+
+## À combiner pour obtenir des cartes complexes...
+
+<br />
+
+:::{.center}
+![](images/magrit-maps.png){.w700}
+:::
+
+## Magrit v2
+
+<br />C'est donc :
+
+<br />
+
+- "Un peu comme Magrit v1"
+
+<br />
+
+- ... mais avec une **refonte totale de l'interface utilisateur, de la documentation, de l'architecture, et de nombreux ajouts...** 👷🏻
+
+## Refonte de l'interface utilisateur
+
+## Nouvelles fonctionnalités de représentation et d'analyse
+
+### Sélection attributaire
+
+## Nouvelles fonctionnalités de représentation et d'analyse
+
+### Aggrégation spatiale
+
+:::{.center}
+![](images/type/aggregation-1.png)
+:::
+
+## Nouvelles fonctionnalités de représentation et d'analyse
+
+### Régression linéaire et cartographie des résidus
+
+:::{.center}
+![](images/type/linear-reg.png){.w800}
+:::
+
+## Nouvelles fonctionnalités de représentation et d'analyse
+
+### Simplification des géométries
+
+:::{.center}
+![](images/simplification.gif){.w600}
+:::
+## Nouvelles fonctionnalités de représentation et d'analyse
+
+### Calculatrice de champs
+
+- Syntaxe SQL-like (comme dans QGIS) pour calculer des champs à partir d'autres champs
+
+:::{.center}
+![](images/field-calc.png){.w700}
+:::
+
+## Nouvelles fonctionnalités de personnalisation
+
+::::{.columns .medium}
+
+:::{.column width=50%}
+
+![](images/tuto2-lgd.png)
+
+:::
+
+:::{.column width=50%}
+
+![](images/legendes.png)
+
+:::
+
+::::
+
+
+## Un respect total de la vie privée
+
+
+<br /><br />
+
+- **Pas de collecte de données personnelles** 🥷🏼 <br><br>
+  Aucun compte utilisateur, aucun tracker, aucun *cookie*, aucun service tiers (pas de Google Fonts, etc.), pas de données stockées sur un serveur distant ni transférées sur le réseau, ...
+
+## Un respect total de la vie privée
+
+- Dans la v1...
+
+:::{.center}
+![](images/magrit-v1.png){.w500}
+:::
+
+## Un respect total de la vie privée
+
+- Dans la v2...
+
+<br /><br />
+
+:::{.center}
+![](images/magrit-v2.png){.w300}
+:::
+
+
+# 2. Démonstration
+
+## Démonstration avec des données ouvertes
+### (≈ 7-10 min)
+
+<br />
+
+- Nous allons réaliser une carte thématique à partir de données ouvertes :
+  - **Données** : [Open Data XXXX - YYYYYYYYYYYY]()
+  - **Objectif** : représenter ...
+
+## Exemple de résultat
+
+:::{.center}
+![](images/demo-result.png){.w800}
+:::
+
+# 3. Perspectives d'évolution
+
+## Nouvelles fonctionnalités d'analyse statistiques 📊
+
+- Réalisation d'**ACP** (Analyse en Composantes Principales)<br>+ **CAH** (Classification Ascendante Hiérarchique) 
+
+:::{.center}
+![](images/futur-acp-cah.png)
+:::
+
+<p style="position: absolute; right: 70px; bottom: 5px;font-size: 0.8em;"><em>Composants en cours<br>de développement...</em></p>
+
+## Ajout de templates cartographiques prédéfinis
+
+- Europe et territoires ultra-marins, France Métropolitaine + DROM, etc.
+
+:::{.center}
+![](images/template-cartographique.png){.w800}
+:::
+
+## Amélioration des performances
+
+<br />
+
+- Améliorer la fluidité de l'affichage et de la navigation dans l'interface lors de l'utilisation de gros jeux de données ⚠️
+  <br><br>
+  *(SVG -> Canvas ? WebGL ?)*
+
+
+## Correction de bugs
+
+<br />
+
+- Corriger les bugs remontés par les utilisateur.trice.s... 🐞<br>
+  *(de nombreux retours depuis Juillet 2024 ! merci à toutes celles et ceux ayant pris le temps de nous remonter des bugs !)*
+
+- ... et continuer à publier régulièrement des mises à jour 🔄
+
+:::{.center}
+![](images/magrit-releases.png){.w300}
+:::
+
+# Merci de votre attention ! 🙏
+
+<br />
+
+**Magrit** : **[https://magrit.cnrs.fr/](https://magrit.cnrs.fr/)**
+
+**Dépôt GitHub** : [https://github.com/riatelab/magrit](https://github.com/riatelab/magrit)
+
+**Supports de formation** : [https://github.com/magrit-formations](https://github.com/magrit-formations)
+
+<br />
+
+**Slides** : [https://riatecom.github.io/Magrit-MagisAR9-2024/](https://riatecom.github.io/Magrit-MagisAR9-2024/)
+
+<br />
+
+_**Contact** : [matthieu.viry@cnrs.fr](mailto:matthieu.viry@cnrs.fr)_
+
