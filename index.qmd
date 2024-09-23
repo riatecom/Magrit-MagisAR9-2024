@@ -8,9 +8,6 @@ format:
   revealjs:
     theme: solarized
     embed-resources: false
-    slide-number: true
-    show-slide-number: all
-    chalkboard: true
     logo: images/logos-footer-with-magrit.png
     width: 1150
     height: 740
@@ -89,7 +86,7 @@ lang: fr
 
 ## Magrit v1
 
-- 02/2017 - 07/2024 : **7+ ans de bons et loyaux services** 😅
+- 02/2017 - 07/2024 : **7 années de bons et loyaux services** 😅
 
 :::{.center}
 ![](images/magrit-v1-screenshot.png){.w900}
@@ -170,6 +167,26 @@ Carroyages
 
 ## *Fonctionnalités de représentation cartographique*
 
+::::{.columns .medium}
+
+:::{.column width=50%}
+![](images/type/aggregation-pts-1.png)
+:::
+
+:::{.column width=50%}
+![](images/type/aggregation-pts-2.png)
+:::
+
+::::
+
+:::{.center}
+![](images/type/agg-points.png){.w300}
+:::
+
+Aggrégation d'un semis de points (choroplèthe ou symboles proportionnels)
+
+## *Fonctionnalités de représentation cartographique*
+
 ![](images/type/smoothed-stewart-pop.png)
 
 Lissage (Potentiel de Stewart, KDE)
@@ -180,12 +197,12 @@ Lissage (Potentiel de Stewart, KDE)
 
 Liens / Flux 
 
-## À combiner pour obtenir des cartes complexes...
+## À combiner et habiller pour obtenir des cartes complexes...
 
 <br />
 
 :::{.center}
-![](images/magrit-maps.png){.w700}
+![](images/magrit-maps.png){.w1000}
 :::
 
 ## Magrit v2
@@ -194,7 +211,7 @@ Liens / Flux
 
 <br />
 
-- "Un peu comme Magrit v1"
+- Toujours un **outil de cartographie thématique simple, complet et disponible sur le Web**... 
 
 <br />
 
@@ -202,9 +219,35 @@ Liens / Flux
 
 ## Refonte de l'interface utilisateur
 
+<br />
+
+- **Interface plus claire et plus ergonomique** 🧑🏼‍💻 *(on espère !)*
+- Plus de cohérence dans l'interface (boutons, menus, etc.)
+- **Thème sombre** 🌒
+
+<br />
+
+::::{.columns .medium}
+
+:::{.column width=50%}
+![](images/magrit-light.png)
+:::
+
+:::{.column width=50%}
+![](images/magrit-dark.png)
+:::
+
+::::
+
 ## Nouvelles fonctionnalités de représentation et d'analyse
 
 ### Sélection attributaire
+
+Créer une nouvelle couche à partir d'une sélection d'entités<br>(sans les NUTS ultra-marins par exemple)...
+
+:::{.center}
+![](images/type/selection-attrib.png){.w500}
+:::
 
 ## Nouvelles fonctionnalités de représentation et d'analyse
 
@@ -258,25 +301,55 @@ Liens / Flux
 ::::
 
 
+## Mais aussi...
+
+<br />
+
+- **Amélioration de la documentation** 📚 <br>
+  (ajout de tutoriels, etc.)
+
+<p></p>
+
+- **Nouvelles méthodes de discrétisation** 📏 <br>
+  (CKMeans, moyennes emboitées, etc.)
+
+<p></p>
+
+- **Amélioration des éléments d'habillages** 🎨 <br>
+  (ligne brisée / flèche, échelle, dessin libre, etc.)
+
+
+
 ## Un respect total de la vie privée
 
 
-<br /><br />
+<br />
 
 - **Pas de collecte de données personnelles** 🥷🏼 <br><br>
   Aucun compte utilisateur, aucun tracker, aucun *cookie*, aucun service tiers (pas de Google Fonts, etc.), pas de données stockées sur un serveur distant ni transférées sur le réseau, ...
+
+:::{.fragment}
+
+<br/>
+
+### Et une version desktop
+
+- Pour une utilisation hors-ligne, hors du navigateur Web 🖥️
+- Téléchargement de l'application pour Windows, MacOS ou Linux puis, **pas de connexion Internet requise**
+
+:::
 
 ## Un respect total de la vie privée
 
 - Dans la v1...
 
 :::{.center}
-![](images/magrit-v1.png){.w500}
+![](images/magrit-v1.png){.w400}
 :::
 
 ## Un respect total de la vie privée
 
-- Dans la v2...
+- Dans la v2, version Web...
 
 <br /><br />
 
@@ -293,7 +366,7 @@ Liens / Flux
 <br />
 
 - Nous allons réaliser une carte thématique à partir de données ouvertes :
-  - **Données** : [Open Data XXXX - YYYYYYYYYYYY]()
+  - **Données** : [Open Data Ville de Paris](https://opendata.paris.fr/pages/home/)
   - **Objectif** : représenter ...
 
 ## Exemple de résultat
@@ -344,7 +417,7 @@ Liens / Flux
 ![](images/magrit-releases.png){.w300}
 :::
 
-# Merci de votre attention ! 🙏
+# Merci de votre attention
 
 <br />
 
@@ -362,3 +435,32 @@ Liens / Flux
 
 _**Contact** : [matthieu.viry@cnrs.fr](mailto:matthieu.viry@cnrs.fr)_
 
+## Et d'un point de vue technique...
+
+:::{.medium}
+
+<br />
+
+- **TypeScript**
+
+- [**SolidJS**](https://www.solidjs.com/) *(React-like)*
+- [**D3.js**](https://d3js.org/) (pour la carto, les projections, etc.)
+
+<p></p>
+
+
+- Plusieurs modules WebAssembly pour les calculs plus lourds :
+  - [**gdal3.js**](https://github.com/bugra9/gdal3.js/) (ouverture de fichiers géospatiaux ou tabulaires)
+  - [**geos-wasm**](https://github.com/chrispahm/geos-wasm/) (intersection, union, buffer, etc.)
+  - [**contour-wasm**](https://github.com/mthh/contour-wasm) (calculs de contours)
+
+<p></p>
+
+
+- [**GPU.js**](https://github.com/gpujs/gpu.js) pour les calculs sur GPU (potentiel de Stewart, KDE)
+
+<p></p>
+
+- [**Electron**](https://electronjs.org/) pour la version desktop
+
+:::
