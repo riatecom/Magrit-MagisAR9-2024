@@ -525,7 +525,7 @@ Matthieu Viry (CNRS - UAR RIATE)
 <h2>Refonte de l’interface utilisateur</h2>
 <p><br></p>
 <ul>
-<li><strong>Interface plus claire et plus ergonomique</strong> 🧑🏼‍💻 <em>(on espère !)</em></li>
+<li><strong>Interface plus claire et plus ergonomique</strong> 🧑🏼‍💻</li>
 <li>Plus de cohérence dans l’interface (boutons, menus, etc.)</li>
 <li><strong>Thème sombre</strong> 🌒</li>
 </ul>
@@ -650,15 +650,15 @@ Matthieu Viry (CNRS - UAR RIATE)
 <ul>
 <li>Nous allons réaliser une carte thématique à partir de données ouvertes :
 <ul>
-<li><strong>Données</strong> : <a href="https://opendata.paris.fr/pages/home/">Open Data Ville de Paris</a></li>
-<li><strong>Objectif</strong> : représenter …</li>
+<li><strong>Données</strong> : <a href="https://data.metropolegrenoble.fr/">Open Data Ville de Grenoble</a></li>
+<li><strong>Objectif</strong> : Représenter le taux d’abstention par bureau de vote lors des élections législatives de 2022</li>
 </ul></li>
 </ul>
 </section>
 <section id="exemple-de-résultat" class="slide level2">
 <h2>Exemple de résultat</h2>
 <div class="center">
-<p><img data-src="images/demo-result.png" class="w800"></p>
+<p><img data-src="images/tuto2-fin.png" class="w800"></p>
 </div>
 </section></section>
 <section>
@@ -691,8 +691,24 @@ Matthieu Viry (CNRS - UAR RIATE)
 <h2>Amélioration des performances</h2>
 <p><br></p>
 <ul>
-<li>Améliorer la fluidité de l’affichage et de la navigation dans l’interface lors de l’utilisation de gros jeux de données ⚠️ <br><br> <em>(SVG -&gt; Canvas ? WebGL ?)</em></li>
+<li>Améliorer la fluidité de l’affichage et de la navigation dans l’interface lors de l’utilisation de gros jeux de données ⚠️ <br><br></li>
 </ul>
+<div class="fragment">
+<img data-src="images/svg-out-of-memory.png">
+<p>
+</p>
+4 milliards de sommets 😱
+<p>
+</p>
+<p>Difficile de naviguer de continuer à utiliser SVG pour l’affichage interactif dans l’interface…</p>
+</div>
+<p>
+</p>
+<div class="fragment">
+<ul>
+<li><strong>SVG → Canvas ? WebGL ?</strong></li>
+</ul>
+</div>
 </section>
 <section id="correction-de-bugs" class="slide level2">
 <h2>Correction de bugs</h2>
