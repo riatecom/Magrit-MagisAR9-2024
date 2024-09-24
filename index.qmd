@@ -221,7 +221,7 @@ Liens / Flux
 
 <br />
 
-- **Interface plus claire et plus ergonomique** 🧑🏼‍💻 *(on espère !)*
+- **Interface plus claire et plus ergonomique** 🧑🏼‍💻
 - Plus de cohérence dans l'interface (boutons, menus, etc.)
 - **Thème sombre** 🌒
 
@@ -366,13 +366,13 @@ Créer une nouvelle couche à partir d'une sélection d'entités<br>(sans les NU
 <br />
 
 - Nous allons réaliser une carte thématique à partir de données ouvertes :
-  - **Données** : [Open Data Ville de Paris](https://opendata.paris.fr/pages/home/)
-  - **Objectif** : représenter ...
+  - **Données** : [Open Data Ville de Grenoble](https://data.metropolegrenoble.fr/)
+  - **Objectif** : Représenter le taux d'abstention par bureau de vote lors des élections législatives de 2022
 
 ## Exemple de résultat
 
 :::{.center}
-![](images/demo-result.png){.w800}
+![](images/tuto2-fin.png){.w800}
 :::
 
 # 3. Perspectives d'évolution
@@ -401,8 +401,22 @@ Créer une nouvelle couche à partir d'une sélection d'entités<br>(sans les NU
 
 - Améliorer la fluidité de l'affichage et de la navigation dans l'interface lors de l'utilisation de gros jeux de données ⚠️
   <br><br>
-  *(SVG -> Canvas ? WebGL ?)*
 
+:::{.fragment}
+
+![](images/svg-out-of-memory.png) <p></p>
+4 milliards de sommets 😱 <p></p> 
+Difficile de naviguer de continuer à utiliser SVG pour l'affichage interactif dans l'interface...
+
+:::
+
+<p></p>
+
+:::{.fragment}
+
+- **SVG → Canvas ? WebGL ?**
+
+:::
 
 ## Correction de bugs
 
